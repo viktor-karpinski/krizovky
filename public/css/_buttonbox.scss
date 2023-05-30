@@ -1,0 +1,65 @@
+.button-box {
+    display: flex;
+    gap: Max(1rem, 1.5rem);
+    justify-content: center;
+
+    button {
+        padding: 0.5rem;
+        background-color: transparent;
+        border-radius: 1rem;
+        width: Min(100%, 5rem);
+        aspect-ratio: 1/1;
+        border: 0.15rem solid var(--clr-violet);
+
+        &.text {
+            width: auto;
+            padding: 1rem;
+            aspect-ratio: unset;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        &.hidden {
+            transform: scale(0);
+        }
+
+        &.show {
+            animation: show 0.5s forwards;
+        }
+
+        @keyframes show {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    }
+
+    &.hide {
+        display: none;
+    }
+
+    &.left {
+        flex-direction: column;
+        padding-left: 1.5rem;
+        width: 6rem;
+        margin-right: -6rem;
+        display: none;
+
+        &.show {
+            display: flex;
+        }
+    }
+
+    &.bottom {
+        display: none;
+        &.show {
+            display: flex;
+        }
+    }
+}

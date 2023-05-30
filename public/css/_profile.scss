@@ -1,0 +1,35 @@
+.profile-container {
+    width: Min(100%, 40rem);
+    margin: 0 auto 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    &.extra {
+        margin-bottom: 0rem;
+    }
+
+    button, a {
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        background-color: transparent;
+        border-bottom: 0.2rem dashed white;
+    }
+
+    article {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            display: block;
+            margin: 0;
+            border: none;
+            width: 4rem;
+            img {
+             width: 100%;
+            }
+         }
+    }
+}

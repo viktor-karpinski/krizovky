@@ -1,0 +1,43 @@
+.width-box {
+    text-align: center;
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .slider {
+            -webkit-appearance: none;
+            width: 80%;
+            height: 3rem;
+            background: #ffffff;
+            outline: none;
+            opacity: 1;
+            -webkit-transition: 0.2s;
+            transition: opacity 0.2s;
+            border-radius: 0.5rem;
+        }
+
+        .slider:hover {
+            opacity: 1;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 3rem;
+            height: 3rem;
+            background: #ffffff;
+            cursor: pointer;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 3rem;
+            height: 3rem;
+            background: #ffffff;
+            cursor: pointer;
+        }
+    }
+
+    #showing {
+        margin-top: 1rem;
+    }
+}
